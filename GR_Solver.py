@@ -21,7 +21,7 @@ g_inv = sym.Matrix(g).inv()
 
 print('Inverse Metric (g^i^j): \n', np.array(g_inv), '\n')
 
-#Defining the Christofel Pseudo-Tensor (gamma^i_j_k)
+#Defining the Christoffel Pseudo-Tensor (gamma^i_j_k)
 gamma = []
 for i in range(4):
     m_temp = []
@@ -32,7 +32,7 @@ for i in range(4):
         m_temp.append(temp)
     gamma.append(m_temp)
 
-#Calculating the Christofel Pseudo-Tensor (gamma^i_j_k)
+#Calculating the Christoffel Pseudo-Tensor (gamma^i_j_k)
 for i in range(4):
     for j in range(4):
         for k in range(4):
@@ -40,7 +40,7 @@ for i in range(4):
                 gamma[i][j][k] += 0.5*g_inv[i, s]*(sym.diff(g[k][s], x[j])+sym.diff(g[j][s], x[k])-sym.diff(g[j][k], x[s]))
             gamma[i][j][k] = sym.simplify(gamma[i][j][k]) #Expression Simplification
 
-print('Christofel Pseudo-Tensor (gamma^i_j_k): \n', np.array(gamma), '\n')
+print('Christoffel Pseudo-Tensor (gamma^i_j_k): \n', np.array(gamma), '\n')
 
 #Defining the Riemann Curvature Tensor (R^i_j_k_w)
 R = []
