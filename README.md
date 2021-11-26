@@ -3,7 +3,7 @@ GR_Solver is a simple, single-file, script written using symbolic python that ta
 
 ## Instructions
 1. pip install requirements.txt
-2. pyhton GR_Solver.py
+2. python GR_Solver.py
 
 In order to modify the metric, simply open the file, edit the  value of the Metric Tensor (g) and the code is ready to be run!
 
