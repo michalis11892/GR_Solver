@@ -1,5 +1,5 @@
 # Overview
-GR_Solver is a simple, single-file, script written using symbolic python that takes as input an arbitrary Metric Tensor and automatically calculates and outputs the Christoffel Pseudo-Tensor, Riemann Curvature Tensor, Ricci Tensor, Scalar Curvature and Kretschmann Scalar
+GR_Solver is a simple, single-file, script written using symbolic python [python 3.9.5] that takes as input an arbitrary Metric Tensor and automatically calculates and outputs the Christoffel Pseudo-Tensor, Riemann Curvature Tensor, Ricci Tensor, Scalar Curvature and Kretschmann Scalar
 
 ## Instructions
 1. pip install requirements.txt
